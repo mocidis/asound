@@ -20,9 +20,9 @@ fi
 uname -a | grep "Linux"
 if [ $? == 0 ]; then
 	ARCHITECTURE=`uname -m`
-	if [ $ARCHITECTURE=="i686" ]; then
+	if [ $ARCHITECTURE = "i686" ]; then
 		INSTALL_DIR=$LINUX_I686
-	elif [ $ARCHITECTURE=="x86_64" ]; then
+	elif [ $ARCHITECTURE = "x86_64" ]; then
 		INSTALL_DIR=$LINUX_X86_64
 	fi
 fi
