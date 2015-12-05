@@ -29,12 +29,12 @@ fi
 
 echo $INSTALL_DIR
 #build for arm first
-#./configure --host=arm-linux --disable-python --prefix=$LINUX_ARMV7L CC=arm-none-linux-gnueabi-gcc
-#make -j4
-#make install
+./configure --host=arm-linux --disable-python --prefix=$LINUX_ARMV7L CC=arm-none-linux-gnueabi-gcc
+make -j4
+make install
 
 #build for intel
-#make distclean
-#./configure --disable-python --prefix=$INSTALL_DIR
-#make -j4
-#make install
+make distclean
+./configure --disable-python --prefix=$INSTALL_DIR
+make -j4
+make install
