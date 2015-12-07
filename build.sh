@@ -29,6 +29,7 @@ fi
 
 echo $INSTALL_DIR
 #build for arm first
+make distclean
 ./configure --host=arm-linux --disable-python --prefix=$LINUX_ARMV7L CC=arm-none-linux-gnueabi-gcc
 make -j4
 make install
