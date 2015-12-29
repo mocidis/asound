@@ -40,7 +40,7 @@ echo $INSTALL_DIR
 #build for arm first
 if [ $ARM == 1 ]; then
 	make distclean
-	./configure --host=arm-linux --disable-python --prefix=$LINUX_ARMV7L CC=arm-none-linux-gnueabi-gcc
+	./configure --host=arm-linux --disable-python --prefix=$LINUX_ARMV7L CC=arm-linux-gnueabihf-gcc
 	make -j4
 	make install
 fi
